@@ -49,10 +49,8 @@ Given any String input, returns all the distinct AND-Siblings that can be formed
 | "1"  | "1" |
 | "12" | "21,12" |
 |"236" | "632,623,362,326,263,236"|
-| '326'| "632,623,362,326,263,236" |
 |'1234"| "4321,4312,4231,4213,4132,4123,3421,3412,3241,3214,3142,3124,2431,2413,2341,2314,2143,2134,1432,1423,1342,1324,1243,1234"|
 |'A 3B2 C6D'| "632,623,362,326,263,236"
-|“A 3B2 C6D” | "632,623,362,326,263,236"|
 |"ABC" | Error: "No intergers found" |
 |Edge Cases not in specification || 
 | 1 | Error: "Please enter a string" 
