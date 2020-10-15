@@ -4,7 +4,9 @@ function solution (input) {
     return input
   } 
 
-  let numberArray = input.split('') 
+  let numbersOnly = input.replace(/\s/g,'').replace(/\D/g,'')
+
+  let numberArray = numbersOnly.split('') 
   let results = [[numberArray.shift()]] 
   while(numberArray.length){
     

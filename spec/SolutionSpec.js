@@ -12,4 +12,8 @@ describe("Solution", function() {
     expect(solution("236")).toEqual("632,623,362,326,263,236")
   });
 
+  it("letter/ number Solution", function() {
+    expect(solution("A 3B2 C6D")).toEqual("632,623,362,326,263,236")
+  });
+
 });
