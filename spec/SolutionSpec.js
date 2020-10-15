@@ -7,4 +7,9 @@ describe("Solution", function() {
   it("Double Digit Solution", function() {
     expect(solution("12")).toEqual("21,12")
   });
+
+  it("Triple Digit Solution", function() {
+    expect(solution("236")).toEqual("632,623,362,326,263,236")
+  });
+
 });
