@@ -14,6 +14,17 @@ My Process and structure:
 - After extensive research I decided on a loop rather than recursive programming:
   - Loops are more efficient, while recursive programmes are often less code they tend to take a computer longer to run
   - I find loops easier to read, meaning I can see how the data is being manipulated and find debugging more straightforward
+
+  - Recursive Loop would have looked something like: 
+
+  for(let i = 0; i < input.length; i ++){
+    let char = input[i]
+    let remainingChars = input.slice(0, i) + input.slice(i + 1, input.length)
+    var innerPermutations = _siblingAlgorithm(remainingChars);
+    for (var j = 0; j < innerPermutations.length; j++) {
+      permutationsArray.push(char + innerPermutations[j])
+    }
+  }
 ```
  
 ## Advised Time
