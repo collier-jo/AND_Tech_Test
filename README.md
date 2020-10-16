@@ -6,7 +6,10 @@ Tech Stack:
 - Jasmine
  
 My Process and structure:
- 
+
+- My first step was to break down the problem by considering the requirements specification then turning this into an Input/Output table moving up in complexity. 
+- As the initial instructions came with the function outline there was no need for a domain model 
+- NOTE: There were some edge cases not outlined in the specification. I did not cover these in my programme as my aim is to raise value and stick to a the brief. 
 - Using an 'console error guided' TDD approach.
 - Using the console allows me to consider the MVP guided by user interaction.
 - After hard coding the first 2 digits I had to consider the structure, I knew this problem was an algorithmic problem and I would need to collect data i.e. There would need to be an empty array and a loop
@@ -14,17 +17,17 @@ My Process and structure:
 - After extensive research I decided on a loop rather than recursive programming:
   - Loops are more efficient, while recursive programmes are often less code they tend to take a computer longer to run
   - I find loops easier to read, meaning I can see how the data is being manipulated and find debugging more straightforward
-
   - Recursive Loop would have looked something like: 
 
-  for(let i = 0; i < input.length; i ++){
-    let char = input[i]
-    let remainingChars = input.slice(0, i) + input.slice(i + 1, input.length)
-    var innerPermutations = _siblingAlgorithm(remainingChars);
-    for (var j = 0; j < innerPermutations.length; j++) {
-      permutationsArray.push(char + innerPermutations[j])
-    }
-  }
+      for(let i = 0; i < input.length; i ++){
+        let char = input[i]
+        let remainingChars = input.slice(0, i) + input.slice(i + 1, input.length)
+        var innerPermutations = _siblingAlgorithm(remainingChars);
+        for (var j = 0; j < innerPermutations.length; j++) {
+          permutationsArray.push(char + innerPermutations[j])
+        }
+      }
+- 
 ```
  
 ## Advised Time
